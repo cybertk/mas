@@ -58,16 +58,20 @@ You can now bootstrap the project by executing the `bootstrap` script
 from the mas sources script directory:
 
 ```
-$ script/bootstrap
+$ ./script/bootstrap
 ```
 
 You can now build from Xcode by opening `mas-cli.xcodeproj`, or from the Terminal:
 
 ```
-$ script/build
+$ ./script/build
 ```
 
 Build output can be found in the `build/` directory within the project.
+
+```
+$ ./build/mas
+```
 
 ## License
 
