@@ -62,6 +62,6 @@ func download(adamId: UInt64) -> MASError? {
     }
     
     
-    dispatch_group_wait(group, DISPATCH_TIME_FOREVER)
+    dispatch_group_wait(group, dispatch_time(0, 30 * 1_000_000_000))
     return purchaseError
 }
