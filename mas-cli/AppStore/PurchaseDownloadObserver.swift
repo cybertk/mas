@@ -65,6 +65,7 @@ struct ProgressState {
 func progress(state: ProgressState) {
     // Don't display the progress bar if we're not on a terminal
     guard isatty(fileno(stdout)) != 0 else {
+        print("==> is not tty")
         return
     }
     
