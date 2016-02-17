@@ -27,6 +27,8 @@ let csi = "\u{001B}["
         }
         else if let state = status.progressState {
             progress(state)
+            print(".")
+            fflush(stdout)
         }
     }
     
@@ -87,6 +89,7 @@ func progress(state: ProgressState) {
 }
 
 func clearLine() {
+    print("clear line")
     guard isatty(fileno(stdout)) != 0 else {
         return
     }
