@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Andrew Naylor. All rights reserved.
 //
 
-let csi = "\u{001B}["
+let csi = ""
 
 @objc class PurchaseDownloadObserver: NSObject, CKDownloadQueueObserver {
     let purchase: SSPurchase
